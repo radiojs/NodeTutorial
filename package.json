@@ -1,0 +1,27 @@
+{
+  "name": "node_tutorial",
+  "version": "0.1.0",
+  "description": "Web application tutorial using Node.js",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radiojs/NodeTutorial.git"
+  },
+  "keywords": [],
+  "author": "Sangwon Lee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/radiojs/NodeTutorial/issues"
+  },
+  "homepage": "https://github.com/radiojs/NodeTutorial#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
