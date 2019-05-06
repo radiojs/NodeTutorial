@@ -24,7 +24,8 @@
   "homepage": "https://github.com/radiojs/NodeTutorial#readme",
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",

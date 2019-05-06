@@ -1,4 +1,8 @@
-# Babel
+[Home](../README.md)  
+
+# ES6 and Babel
+
+본격적으로 Node.js 웹 애플리케이션 개발을 배우기 전에 잠깐 JavaScript 언어에 대하여 한 대목 배우고 넘어가자.
 
 ## 배경
 
