@@ -22,6 +22,15 @@ router.get('/', (req, res) => {
   const data = { version: '8.11.4' };
   res.render('home', data);
 });
+router.get('/about', (req, res) => {
+  const data = {};
+  res.render('about', data);
+});
+router.get('/blogs', (req, res) => {
+  const data = {};
+  res.render('blogList', data);
+});
+
 app.use(router);
 
 app.listen(3000, function() {

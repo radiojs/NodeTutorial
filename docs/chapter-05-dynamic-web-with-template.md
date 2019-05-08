@@ -64,3 +64,45 @@
 여기서 함수 내부의 `data` 객체는 템플릿으로 전달되는 정보 객체이다.
 이런 방법으로 템플릿에 동적으로 정보를 지정할 수 있다.
 
+#### 3. 네비게이션 설정
+
+레이아웃의 header 영역에 네비게이션 링크를 설정한다.
+
+`src/view/partials/header.hbs` 파일을 다음과 같이 수정한다:
+
+```
+    <header>
+        <div class="title">Node Tutorial</div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/blogs">Blog list</a></li>
+            </ul>
+        </nav>
+    </header>
+```
+
+`nav` 태그에 대한 CSS 설정을 통해서 네비게이션 메뉴가 헤더의 우측에 정렬되도록 구현할 수 있다.
+
+#### 4. 라우터 설정
+
+`index.js` 파일의 라우팅 코드 부분을 다음과 같이 추가한다:
+
+```
+    ...
+    const router = express.Router();
+    router.get('/', (req, res) => {
+      const data = { version: '8.11.4' };
+      res.render('home', data);
+    });
+    router.get('/about', (req, res) => {
+      const data = {};
+      res.render('about', data);
+    });
+    router.get('/blogs', (req, res) => {
+      const data = {};
+      res.render('blogList', data);
+    });
+```
+
