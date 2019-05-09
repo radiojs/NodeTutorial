@@ -14,7 +14,5 @@ const blogList = () => {
     }];
 };
 
-export {
-    blogList,
-};
+export { blogList };
 
