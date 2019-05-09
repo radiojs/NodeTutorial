@@ -1,6 +1,10 @@
 import express from 'express';
 import exphbs from 'express-handlebars';
 
+import homeController from './controllers/homeController';
+import aboutController from './controllers/aboutController';
+import blogListController from './controllers/blogListController';
+
 const app = express();
 
 // static files
@@ -18,18 +22,9 @@ app.set('views', `${__dirname}/views/pages/`);
 
 // setup routing
 const router = express.Router();
-router.get('/', (req, res) => {
-  const data = { version: '8.11.4' };
-  res.render('home', data);
-});
-router.get('/about', (req, res) => {
-  const data = {};
-  res.render('about', data);
-});
-router.get('/blogs', (req, res) => {
-  const data = {};
-  res.render('blogList', data);
-});
+router.get('/', homeController);
+router.get('/about', aboutController);
+router.get('/blogs', blogListController);
 
 app.use(router);
 

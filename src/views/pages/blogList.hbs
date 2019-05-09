@@ -1,5 +1,11 @@
 <main>
     <div class="content">
         <p>Blog list</p>
+        <p>version: {{version}}</p>
+        <ul>
+        {{#each blogs}}
+            <li>{{title}}</li>
+        {{/each}}
+        </ul>
     </div>
 </main>
