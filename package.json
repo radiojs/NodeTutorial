@@ -25,7 +25,8 @@
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
     "express": "^4.16.4",
-    "express-handlebars": "^3.0.2"
+    "express-handlebars": "^3.0.2",
+    "log4js": "^4.1.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",

@@ -6,7 +6,7 @@ const blogListController = (req, res, next) => {
         blogs: blogList(),
         version: getVersion(),
     };
-    res.render('blogList', data);  
+    res.render('blogList', data1);  
 };
 
 export default blogListController;
